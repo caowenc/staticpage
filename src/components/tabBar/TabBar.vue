@@ -1,7 +1,7 @@
 <template>
   <div id="tabbar">
     <div class="tab">
-      <hr style="background-color:#999;height:0.8px;width:100%;border:none;margin-bottom:4px" />
+      <hr style="width:100%;border:1px solid #b8b8b8;margin-bottom:4px;overflow:hidden" />
       <ul class="tab-bar">
         <li class="tab-bar-item" v-for="(item, index) in nav" :key="index" @click="selectNav(item.title)">
           <span class="tab-bar-item-icon">
@@ -98,7 +98,6 @@ export default {
 .router-link-exact-active {
   color: #999999;
   font-weight: 600;
- 
 }
 .active {
   color:rgb(12, 12, 12);
