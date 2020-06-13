@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-    <div class="mm1">
+    <div class="mm1" @click="gomine">
       <img class="m1" src="@/assets/images/drawable-xhdpi/mine2.png" />
       <ul>
         <li><img class="m2" src="@/assets/images/drawable-xhdpi/id.png" /></li>
@@ -69,7 +69,11 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    gomine() {
+      this.$router.push('/mine')
+    }
+  },
   computed: {}
 }
 </script>
@@ -222,10 +226,9 @@ p {
   color: #666666;
 }
 .mm5 {
-  
   margin-top: 12px;
   background: white;
- height: 280px;
+  height: 280px;
 }
 
 .mm5 ul img {
@@ -242,7 +245,7 @@ p {
   border-bottom: 1px solid #999;
 }
 
-.mm5 li:last-child{
+.mm5 li:last-child {
   border-bottom: 0px;
 }
 .e11 span {
@@ -257,7 +260,7 @@ p {
   font-weight: 100;
   color: #b8b8b8;
 }
-.e2{
+.e2 {
   margin-left: 18px;
   padding-top: 20px;
 }
@@ -271,5 +274,4 @@ p {
   background: #f6f7f9;
   height: 120px;
 }
-
 </style>
