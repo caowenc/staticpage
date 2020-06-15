@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div class="mm3">
-      <img class="m7" src="@/assets/images/drawable-xhdpi/vip.png" />
+      <img @click="govip" class="m7" src="@/assets/images/drawable-xhdpi/vip.png" />
       <img class="m8" src="@/assets/images/drawable-xhdpi/yetx.png" />
       <img class="m9" src="@/assets/images/drawable-xhdpi/mrcj.png" />
       <img class="m10" src="@/assets/images/drawable-xhdpi/xxzx.png" />
@@ -72,6 +72,9 @@ export default {
   methods: {
     gomine() {
       this.$router.push('/mine')
+    },
+    govip() {
+      this.$router.push('/vip')
     }
   },
   computed: {}

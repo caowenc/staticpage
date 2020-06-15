@@ -41,6 +41,26 @@ const routes = [
         path: '/data',
         name: 'Data',
         component: () => import('../views/personal/Data.vue')
+      },
+      {
+        path: '/circle1',
+        name: 'circle1',
+        component: () => import('../views/personal/circle1.vue')
+      },
+      {
+        path: '/focus',
+        name: 'focus',
+        component: () => import('../views/personal/focus.vue')
+      },
+      {
+        path: '/fans',
+        name: 'fans',
+        component: () => import('../views/personal/fans.vue')
+      },
+      {
+        path: '/vip',
+        name: 'vip',
+        component: () => import('../views/personal/vip.vue')
       }
     ]
   }

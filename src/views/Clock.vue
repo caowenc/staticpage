@@ -15,7 +15,7 @@ import TabBar from '../components/tabBar/TabBar'
 export default {
   name: 'Clock',
   data() {
-    return {  }
+    return {}
   },
   components: {
     TabBar
