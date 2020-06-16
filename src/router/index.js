@@ -61,6 +61,11 @@ const routes = [
         path: '/vip',
         name: 'vip',
         component: () => import('../views/personal/vip.vue')
+      },
+      {
+        path: '/success',
+        name: 'success',
+        component: () => import('../views/target/success.vue')
       }
     ]
   }

@@ -1,13 +1,7 @@
 <template>
   <div class="all">
     <div class="head">
-      <img
-        @click="gopersonal"
-        class
-        src="@/assets/images/drawable-xhdpi/m1.png"
-        width="40"
-        style="margin-left:-5px;margin-top:10px;"
-      />
+      <img @click="gopersonal" class src="@/assets/images/drawable-xhdpi/m1.png" width="40" style="margin-left:-5px;margin-top:10px;" />
       <button
         @click="godata"
         style="background-color: #ffd430;border-radius:20px;
