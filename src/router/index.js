@@ -63,9 +63,39 @@ const routes = [
         component: () => import('../views/personal/vip.vue')
       },
       {
+        path: '/money',
+        name: 'money',
+        component: () => import('../views/personal/money.vue')
+      },
+      {
+        path: '/money',
+        name: 'money',
+        component: () => import('../views/personal/money.vue')
+      },
+       {
+        path: '/message',
+        name: 'message',
+        component: () => import('../views/personal/message.vue')
+      },
+      {
         path: '/success',
         name: 'success',
         component: () => import('../views/target/success.vue')
+      },
+      {
+        path: '/time',
+        name: 'time',
+        component: () => import('../views/tools/time.vue')
+      },
+      {
+        path: '/theme',
+        name: 'theme',
+        component: () => import('../views/tools/theme.vue')
+      },
+      {
+        path: '/card',
+        name: 'card',
+        component: () => import('../views/tools/card.vue')
       }
     ]
   }

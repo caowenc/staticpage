@@ -4,7 +4,7 @@
       <img class="bg" src="@/assets/images/drawable-xhdpi/vipbg.png" />
       <ul>
         <li class="jt">
-          <img @click="gomine" class="h1" src="@/assets/images/drawable-xhdpi/data.png" width="25" />
+          <img @click="gopersonal" class="h1" src="@/assets/images/drawable-xhdpi/data.png" width="25" />
         </li>
         <li>
           <span class="head1">我的VIP</span>
@@ -111,7 +111,11 @@ export default {
   components: {},
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    gopersonal() {
+      this.$router.push('/personal')
+    }
+  },
   computed: {}
 }
 </script>
@@ -192,7 +196,7 @@ export default {
 }
 .tab {
   width: 350;
-  height: 450px;
+  height: 550px;
   border: 0;
 }
 .t1 {

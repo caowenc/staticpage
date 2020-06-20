@@ -6,7 +6,9 @@
         @click="godata"
         style="background-color: #ffd430;border-radius:20px;
            width:90px;height:30px; margin-left:270px;margin-top:55px;"
-      >编辑资料</button>
+      >
+        编辑资料
+      </button>
     </div>
     <div class="head1">
       <img class="h1" src="@/assets/images/drawable-xhdpi/id.png" width="90" />

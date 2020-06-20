@@ -12,9 +12,9 @@
     </div>
     <div class="mm3">
       <img @click="govip" class="m7" src="@/assets/images/drawable-xhdpi/vip.png" />
-      <img class="m8" src="@/assets/images/drawable-xhdpi/yetx.png" />
+      <img @click="gomoney" class="m8" src="@/assets/images/drawable-xhdpi/yetx.png" />
       <img class="m9" src="@/assets/images/drawable-xhdpi/mrcj.png" />
-      <img class="m10" src="@/assets/images/drawable-xhdpi/xxzx.png" />
+      <img @click="gomessage" class="m10" src="@/assets/images/drawable-xhdpi/xxzx.png" />
       <span class="m11">余额提现</span>
       <span class="m22">每日抽奖</span>
       <span class="m33">消息中心</span>
@@ -23,8 +23,8 @@
       <p>小工具</p>
       <img class="m41" src="@/assets/images/drawable-xhdpi/tool1.png" />
       <img class="m41" src="@/assets/images/drawable-xhdpi/tool2.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool3.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool4.png" />
+      <img class="m41" @click="gotheme"  src="@/assets/images/drawable-xhdpi/tool3.png" />
+      <img class="m41" @click="gocard" src="@/assets/images/drawable-xhdpi/tool4.png" />
       <span class="m51">计时器</span>
       <span class="m52"> 我的勋章</span>
       <span class="m53">主题换肤</span>
@@ -62,7 +62,7 @@ import TabBar from '../components/tabBar/TabBar'
 export default {
   name: 'Personal',
   data() {
-    return { }
+    return {}
   },
   components: {
     TabBar
@@ -75,6 +75,18 @@ export default {
     },
     govip() {
       this.$router.push('/vip')
+    },
+    gomoney() {
+      this.$router.push('/money')
+    },
+    gomessage() {
+      this.$router.push('/message')
+    },
+    gotheme() {
+      this.$router.push('/theme')
+    },
+    gocard() {
+      this.$router.push('/card')
     }
   },
   computed: {}
