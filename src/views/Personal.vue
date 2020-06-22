@@ -22,17 +22,17 @@
     <div class="mm4">
       <p>小工具</p>
       <img class="m41" src="@/assets/images/drawable-xhdpi/tool1.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool2.png" />
+      <img class="m41" @click="gomedal" src="@/assets/images/drawable-xhdpi/tool2.png" />
       <img class="m41" @click="gotheme"  src="@/assets/images/drawable-xhdpi/tool3.png" />
       <img class="m41" @click="gocard" src="@/assets/images/drawable-xhdpi/tool4.png" />
       <span class="m51">计时器</span>
       <span class="m52"> 我的勋章</span>
       <span class="m53">主题换肤</span>
       <span class="m54">补签卡</span>
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool5.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool6.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool7.png" />
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool8.png" />
+      <img class="m41" @click="gogrow" src="@/assets/images/drawable-xhdpi/tool5.png" />
+      <img class="m41" @click="gocount" src="@/assets/images/drawable-xhdpi/tool6.png" />
+      <img class="m41" @click="goweek" src="@/assets/images/drawable-xhdpi/tool7.png" />
+      <img class="m41" @click="goranking" src="@/assets/images/drawable-xhdpi/tool8.png" />
       <span class="m55">成长记录</span>
       <span class="m55">目标统计</span>
       <span class="m56">打卡周报</span>
@@ -40,16 +40,16 @@
     </div>
     <div class="mm5">
       <ul>
-        <img class="e1" src="@/assets/images/drawable-xhdpi/end1.png" width="35px" />
-        <li class="e11">邀请好友<span>&rsaquo;</span></li>
-        <img class="e1" src="@/assets/images/drawable-xhdpi/end2.png" width="35px" />
-        <li class="e11">联系我们<span>&rsaquo;</span></li>
+        <img class="e1" @click="gofriends" src="@/assets/images/drawable-xhdpi/end1.png" width="35px" />
+        <li class="e11" @click="gofriends">邀请好友<span>&rsaquo;</span></li>
+        <img class="e1" @click="gotouch" src="@/assets/images/drawable-xhdpi/end2.png" width="35px" />
+        <li class="e11" @click="gotouch">联系我们<span>&rsaquo;</span></li>
         <img class="e1" src="@/assets/images/drawable-xhdpi/end3.png" width="35px" />
         <li class="e11">给个好评<span>&rsaquo;</span></li>
-        <img class="e1" src="@/assets/images/drawable-xhdpi/end4.png" width="35px" />
-        <li class="e12">设置<span>&rsaquo;</span></li>
+        <img class="e1" @click="goset" src="@/assets/images/drawable-xhdpi/end4.png" width="35px" />
+        <li class="e12" @click="goset">设置<span>&rsaquo;</span></li>
         <img class="e1" src="@/assets/images/drawable-xhdpi/end5.png" width="35px" />
-        <li class="e13">《<span style="color:#5193f4;font-size:16px">用户服务协议</span>》和《<span style="color:#5193f4;font-size:16px">隐私协议</span>》</li>
+        <li class="e13">《<span style="color:#5193f4;font-size:16px" @click="gouser" >用户服务协议</span>》和《<span style="color:#5193f4;font-size:16px" @click="gosecret">隐私协议</span>》</li>
       </ul>
     </div>
     <div class="mm6"></div>
@@ -87,6 +87,36 @@ export default {
     },
     gocard() {
       this.$router.push('/card')
+    },
+    goweek() {
+      this.$router.push('/week')
+    },
+    gofriends() {
+      this.$router.push('/friends')
+    },
+    gotouch() {
+      this.$router.push('/touch')
+    },
+    goset() {
+      this.$router.push('/set')
+    },
+    gomedal() {
+      this.$router.push('/medal')
+    },
+    gogrow() {
+      this.$router.push('/grow')
+    },
+    gocount() {
+      this.$router.push('/count')
+    },
+    goranking() {
+      this.$router.push('/ranking')
+    },
+    gouser() {
+      this.$router.push('/user')
+    },
+    gosecret() {
+      this.$router.push('/secret')
     }
   },
   computed: {}

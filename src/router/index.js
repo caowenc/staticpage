@@ -71,11 +71,35 @@ const routes = [
         path: '/money',
         name: 'money',
         component: () => import('../views/personal/money.vue')
-      },
-       {
+      },{
         path: '/message',
         name: 'message',
         component: () => import('../views/personal/message.vue')
+      },
+      {
+        path: '/friends',
+        name: 'friends',
+        component: () => import('../views/personal/friends.vue')
+      },
+      {
+        path: '/touch',
+        name: 'touch',
+        component: () => import('../views/personal/touch.vue')
+      },
+      {
+        path: '/set',
+        name: 'set',
+        component: () => import('../views/personal/set.vue')
+      },
+      {
+        path: '/user',
+        name: 'user',
+        component: () => import('../views/personal/user.vue')
+      },
+      {
+        path: '/secret',
+        name: 'secret',
+        component: () => import('../views/personal/secret.vue')
       },
       {
         path: '/success',
@@ -96,6 +120,31 @@ const routes = [
         path: '/card',
         name: 'card',
         component: () => import('../views/tools/card.vue')
+      },
+      {
+        path: '/week',
+        name: 'week',
+        component: () => import('../views/tools/week.vue')
+      },
+      {
+        path: '/medal',
+        name: 'medal',
+        component: () => import('../views/tools/medal.vue')
+      },
+      {
+        path: '/grow',
+        name: 'grow',
+        component: () => import('../views/tools/grow.vue')
+      },
+      {
+        path: '/count',
+        name: 'count',
+        component: () => import('../views/tools/count.vue')
+      },
+      {
+        path: '/ranking',
+        name: 'ranking',
+        component: () => import('../views/tools/ranking.vue')
       }
     ]
   }
