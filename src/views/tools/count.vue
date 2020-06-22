@@ -94,7 +94,7 @@ export default {
   created() {},
   mounted() {},
   methods: { 
-      gopersonal() {
+    gopersonal() {
       this.$router.push('/personal')
     }
   },
