@@ -7,16 +7,10 @@
         </li>
         <li class="mb2">目标</li>
         <li>
-          <img class="mb3" src="@/assets/images/drawable-xhdpi/mb5.png" width="26px" height="26px" />
+          <img class="mb3" @click="gonew" src="@/assets/images/drawable-xhdpi/mb5.png" width="26px" height="26px" />
         </li>
         <li>
-          <img
-            class="mb4"
-            @click="gosuccess"
-            src="@/assets/images/drawable-xhdpi/mb3.png"
-            width="26px"
-            height="26px"
-          />
+          <img class="mb4" @click="gosuccess" src="@/assets/images/drawable-xhdpi/mb3.png" width="26px" height="26px" />
         </li>
       </ul>
     </div>
@@ -85,6 +79,9 @@ export default {
   methods: {
     gosuccess() {
       this.$router.push('/success')
+    },
+     gonew() {
+      this.$router.push('/new')
     }
   },
   computed: {}

@@ -21,7 +21,7 @@
     </div>
     <div class="mm4">
       <p>小工具</p>
-      <img class="m41" src="@/assets/images/drawable-xhdpi/tool1.png" />
+      <img class="m41" @click="goclock1" src="@/assets/images/drawable-xhdpi/tool1.png" />
       <img class="m41" @click="gomedal" src="@/assets/images/drawable-xhdpi/tool2.png" />
       <img class="m41" @click="gotheme"  src="@/assets/images/drawable-xhdpi/tool3.png" />
       <img class="m41" @click="gocard" src="@/assets/images/drawable-xhdpi/tool4.png" />
@@ -117,6 +117,9 @@ export default {
     },
     gosecret() {
       this.$router.push('/secret')
+    },
+    goclock1() {
+      this.$router.push('/clock1')
     }
   },
   computed: {}

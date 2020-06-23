@@ -107,6 +107,11 @@ const routes = [
         component: () => import('../views/target/success.vue')
       },
       {
+        path: '/new',
+        name: 'new',
+        component: () => import('../views/target/new.vue')
+      },
+      {
         path: '/time',
         name: 'time',
         component: () => import('../views/tools/time.vue')
@@ -145,6 +150,11 @@ const routes = [
         path: '/ranking',
         name: 'ranking',
         component: () => import('../views/tools/ranking.vue')
+      },
+      {
+        path: '/clock1',
+        name: 'clock1',
+        component: () => import('../views/tools/clock1.vue')
       }
     ]
   }
