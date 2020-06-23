@@ -2,7 +2,7 @@
   <div class="all">
     <div class="head">
       <div>
-        <img class="t1" src="@/assets/images/drawable-xhdpi/c1.png" width="30px" />
+        <img class="t1" @click="gosearch" src="@/assets/images/drawable-xhdpi/c1.png" width="30px" />
       </div>
       <div class="body">
         <ul>
@@ -56,7 +56,7 @@
             <img class="e4" src="@/assets/images/drawable-xhdpi/x1.png" width="30px" />
             <span class="e5">0</span>
           </div>
-          <img class="e6" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
+          <img class="e6" @click="godaily" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
         </div>
       </div>
       <div class="hot" v-show="cur == 1">
@@ -94,7 +94,7 @@
             <span class="e5">25</span>
           </div>
          <div>
-          <img class="e6" style=" position: absolute;margin-top:-110px;margin-left:310px" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
+          <img class="e6" @click="godaily" style=" position: absolute;margin-top:-110px;margin-left:310px" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
         </div>
         </div>
       </div>
@@ -133,7 +133,7 @@
             <span class="e5">25</span>
           </div>
             <div>
-          <img class="e6" style="margin-left:290px" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
+          <img class="e6" @click="godaily" style="margin-left:290px" src="@/assets/images/drawable-xhdpi/c2.png" width="50px" />
         </div>
         </div>
       </div>
@@ -154,7 +154,14 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    gosearch() {
+      this.$router.push('/search')
+    }, 
+     godaily() {
+      this.$router.push('/daily')
+    }
+  },
   computed: {}
 }
 </script>

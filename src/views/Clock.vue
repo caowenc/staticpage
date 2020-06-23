@@ -2,14 +2,13 @@
   <div class="mbpage">
     <ul class="m1">
       <li>
-        <img class="mb1" src="@/assets/images/drawable-xhdpi/clock2.png" width="26px" height="26px" />
+        <img  @click="gobgm" class="mb1" src="@/assets/images/drawable-xhdpi/clock2.png" width="26px" height="26px" />
       </li>
       <li class="mb2">番茄计时</li>
       <li>
-        <img class="mb4" src="@/assets/images/drawable-xhdpi/clock3.png" width="26px" height="26px" />
+        <img  @click="gostd" class="mb4" src="@/assets/images/drawable-xhdpi/clock3.png" width="26px" height="26px" />
       </li>
     </ul>
-
     <div style="position:relative;">
       <img class="circle" src="@/assets/images/drawable-xhdpi/clock4.png" />
       <div class="time">25:00</div>
@@ -36,7 +35,13 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+      gobgm() {
+      this.$router.push('/bgm')
+    }, gostd() {
+      this.$router.push('/std')
+    }
+  },
   computed: {}
 }
 </script>

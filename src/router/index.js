@@ -160,6 +160,21 @@ const routes = [
         path: '/bgm',
         name: 'bgm',
         component: () => import('../views/clock/bgm.vue')
+      },
+      {
+        path: '/search',
+        name: 'search',
+        component: () => import('../views/circle/search.vue')
+      },
+      {
+        path: '/daily',
+        name: 'daily',
+        component: () => import('../views/circle/daily.vue')
+      },
+      {
+        path: '/std',
+        name: 'std',
+        component: () => import('../views/clock/std.vue')
       }
     ]
   }

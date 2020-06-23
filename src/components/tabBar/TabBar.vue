@@ -3,7 +3,12 @@
     <div class="tab">
       <hr style="width:100%;border:1px solid #b8b8b8;margin-bottom:4px;overflow:hidden" />
       <ul class="tab-bar">
-        <li class="tab-bar-item" v-for="(item, index) in nav" :key="index" @click="selectNav(item.title)">
+        <li
+          class="tab-bar-item"
+          v-for="(item, index) in nav"
+          :key="index"
+          @click="selectNav(item.title)"
+        >
           <span class="tab-bar-item-icon">
             <img :src="isSelect === item.title ? item.url_one : item.url" alt="item.title" :class="[{ home: index === 2 }, { image: index < 2 || index > 2 }]" />
           </span>
@@ -100,7 +105,7 @@ export default {
   font-weight: 600;
 }
 .active {
-  color:rgb(12, 12, 12);
+  color: rgb(12, 12, 12);
   font-size: 0.9rem;
 }
 .home {
