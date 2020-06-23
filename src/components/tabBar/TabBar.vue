@@ -21,7 +21,7 @@ export default {
   name: 'TabBar',
   data() {
     return {
-      isSelect: '首页',
+      isSelect: '目标',
       nav: [
         { title: '目标', url: require('@/assets/images/drawable-xhdpi/mb.png'), url_one: require('@/assets/images/drawable-xhdpi/mb1.png') },
         { title: '番茄钟', url: require('@/assets/images/drawable-xhdpi/clock.png'), url_one: require('@/assets/images/drawable-xhdpi/clock1.png') },

@@ -155,6 +155,11 @@ const routes = [
         path: '/clock1',
         name: 'clock1',
         component: () => import('../views/tools/clock1.vue')
+      },
+      {
+        path: '/bgm',
+        name: 'bgm',
+        component: () => import('../views/clock/bgm.vue')
       }
     ]
   }
